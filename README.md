@@ -9,7 +9,6 @@ Installation
 ------------
 
     # clone patched supercollider 3.10.3
-    $ cd
     $ git clone https://github.com/capocasa/supercollider -branch quarkbuild
     $ cd supercollider
 
