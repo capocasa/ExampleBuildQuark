@@ -1,13 +1,14 @@
-// simplest build script for proposed buildable quarks
+// build script for proposed buildable quarks
+
+// TODO: test on osx and windows, potentially use seperate commands
 
 // Create build directory
-File.mkdir(~localDir +/+ "build");
+File.mkdir(~localPath +/+ "build");
 
 // Execute build commands if previous command was successful
 // Returning true if entire command successful, otherwise false
-
 0 ==
-"cd % &&"
-"cmake .. &&"
+"cd '%' &&"
+"cmake .. -DSC_PATH='%' &&"
 "make clean &&"
-"make".format(thisProcess.platform.formatPathForCmdLine(~localDir +/+ "build")).systemCmd
+"make".format(~localPath +/+ "build", ~scPath).systemCmd
