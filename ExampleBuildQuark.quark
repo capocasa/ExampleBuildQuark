@@ -1,0 +1,10 @@
+(
+	\name: "ExampleBuildQuark",
+	\path: "ExampleBuildQuark", // path relative to the root Quarks folder
+	\summary: "Example quark for proposed quark build system",
+	\author: "Carlo Capocasa",
+	\url:           "http://www.capocasa.net",
+	\version:	0.5,
+	\since: "2019",
+	\helpdoc: "README.md"
+)
